@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+.text  {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 1.7;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text__black {
+    color: black;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #5A5A5A;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 45px;
+    display: grid;
+    grid-template-rows: repeat(7, 250px);
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "biker div1 bike biker2 biker2"
+    "biker biker3 biker3 div2 div2"
+    "biker4 biker3 biker3 div3 div3"
+    "biker4 biker3 biker3 hemlet div4"
+    "biker4 div5 div5 biker5 biker5"
+    "div6 biker6 biker6 biker5 biker5"
+    "div7 biker6 biker6 div8 div8"
+}
+
+/* ?_________________________HEADER_____________________ */
+
+.header {
+    
+}
+.header__container {
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 20px 45px;
+}
+
+.logo  {
+    font-size: 64px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+
+.header__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.header__list a {
+    text-transform: uppercase;
+    color: #8A8A8A;
+
+}
+
+
+/* ?_________________________MAIN_____________________ */
+
+
+.biker {
+    grid-area: biker;
+}
+
+.div1 {
+    grid-area: div1;
+    background-color: #FFF4DE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bike {
+    position: relative;
+    grid-area: bike;
+    background-color: #80C7E3;
+}
+.bike__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 190px;
+    height: 122px;
+}
+
+.biker2 {
+  grid-area: biker2;
+}
+
+.biker3 {
+    grid-area: biker3;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.div2 {
+    background-color: #EC0E44;
+    grid-area: div2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.biker4 {
+    grid-area: biker4;
+}
+
+.div3 {
+    background-color: #FFF4DE;
+    grid-area: div3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hemlet {
+    background-color: #80C7E3;
+    grid-area: hemlet;
+
+    position: relative;
+}
+
+.hemlet__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 176px;
+    height: 156px;
+}
+
+.div4 {
+    background-color: #000;
+    color: #fff;
+    grid-area: div4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.div5 {
+    background-color: #ED0F4C;
+    grid-area: div5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.biker5 {
+    grid-area: biker5;
+}
+
+.div6 {
+    background-color: #FFF4DE;
+    grid-area: div6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.biker6 {
+    grid-area: biker6;
+
+}
+
+.div7 {
+    background-color: #FFF4DE;
+    grid-area: div7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div7::before {
+    content: '';
+    height: 8px; 
+    width: 100%; 
+    background-color: #FB2828;
+    
+}
+
+.div7::after{
+    content: '';
+    height: 8px; 
+    width: 100%; 
+    background-color: #FB2828;
+
+}
+
+.line {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 8px;
+    background-color: #FB2828;
+    
+}
+
+.div8 {
+    background-color: #80C7E3;
+    grid-area: div8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.footer__container {
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 50px 45px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "footer__list1 footer__list2 footer__list2 copy copy"
+}
+
+.footer__list1 {
+    grid-area: footer__list1;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__list2 {
+    grid-area: footer__list2;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.copy {
+    margin: 0;
+    grid-area: copy;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1255px) {
+    .about {
+        display: none;
+    }
+    .biker4 {
+        display: none;
+    }
+
+    .biker6 {
+        display: none;
+    }
+
+    .div7 {
+        display: none;
+    }
+
+    .main__container {
+        padding: 0;
+        grid-template-rows: repeat(9, 250px);
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        grid-template-areas: 
+        "biker biker biker div1"
+        "biker biker biker bike"
+        "div2 div2 div2 div2"
+        "hemlet biker3 biker3 biker3"
+        "div4 biker3 biker3 biker3 "
+        "div8 biker3 biker3 biker3"
+        "div5 div5 div3 div3"
+        "biker2 biker2 biker5 biker5"
+        "div6 div6 div6 div6"
+    }
+
+    .footer__container {
+        padding: 30px 113px 40px 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "footer__list1 footer__list2"
+        "copy copy"
+    }
+
+    .copy {
+        margin-top: 40px;
+    }
+}
+
+    @media (max-width: 768px)  {
+
+    .header__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        }  
+
+        .main__container {
+            grid-template-rows: 1fr 2fr repeat(8, 1fr);
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "div1 bike"
+            "biker biker"
+            "div2 div2"
+            "biker3 hemlet"
+            " biker3 div4 "
+            "biker3 div8"
+            "div5 div5"
+            "div3 div3"
+            "biker2 biker5"
+            "div6 div6"
+        }
+
+        .text  {
+            font-size: 28px;
+            letter-spacing: normal;
+        }
+
+        .footer__container {
+            padding: 30px 40px;
+            display: grid;
+            text-align: center;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "footer__list1" 
+            "footer__list2"
+            "copy"
+        }
+
+        .footer__list2 {
+            margin-top: 20px;
+        }
+
+        .copy {
+            text-transform: none;
+            margin-top: 30px;
+        }
+
+        .bike__img {
+            width: 130px;
+            height: 82px;
+        }
+
+        .hemlet__img {
+            width: 118px;
+            height: 104px;
+        }
+
+    }
